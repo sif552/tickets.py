@@ -10,6 +10,12 @@ while True:
     new_sale = input("Is there a new ticket sale? (yes/no): ")
     if new_sale.lower() == "no":
         break
+
+        adult_tickets_sold = 0
+        child_tickets_sold = 0
+        concession_tickets_sold = 0
+
+        total_tickets_sold = 0
   
     while True:
         try:
@@ -26,7 +32,9 @@ while True:
   
     sale_total = adult_tickets * adult_price + child_tickets * child_price + concession_tickets * concession_price
     total_sales += sale_total
-    print(f"Total due: <img src="https://latex.codecogs.com/gif.latex?{sale_total:.2f}&quot;)print(f&quot;Total%20sales:"/>{total_sales:.2f}")
+    print(f"Total due: <img src="https://latex.codecogs.com/gif.latex?{sale_total:.2f}&quot;)
+
+print(f&quot;Total%20sales:"/>{total_sales:.2f}")
 print(f"Adult tickets sold: {adult_tickets}")
 print(f"Child tickets sold: {child_tickets}")
 print(f"Concession tickets sold: {concession_tickets}")
